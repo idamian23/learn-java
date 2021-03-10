@@ -7,7 +7,7 @@ public class Exercise3 {
 
     //Assignment 1 - Exercise 3
     // Use the Random class to generate elements for a matrix for which you read
-    //length and height from the keyboard
+    //length and height from the keyboard.
 
     public static void main(String[] args){
         Random random = new Random();
