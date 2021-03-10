@@ -4,6 +4,10 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Exercise5 {
+
+    //Generate a random array of numbers and searvh for a specific one.
+    //If you find it then use a named break to exit the loop.
+
     public static void main(String[] arg){
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
