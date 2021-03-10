@@ -3,6 +3,8 @@ package io.learnstuff.tutorial.main;
 public class Counter {
 
     // todo : count cu generics
+
+    // Solution exercise 1
     public int count(int[] arr, int toFind) {
         int counter = 0;
         for (int i = 0; i < arr.length; i++) {
