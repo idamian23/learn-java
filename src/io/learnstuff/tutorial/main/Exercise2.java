@@ -8,7 +8,7 @@ public class Exercise2 {
 
         // Assignment 1 - Exercise 2
         // Read an array and a matrix from the keyboard
-        // (requires the use of scanner)
+        // (requires the use of scanner).
 
         int length;
         int rows;
