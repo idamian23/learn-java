@@ -1,4 +1,4 @@
-package io.learnstuff.tutorial.assignment2;
+package io.learnstuff.tutorial.oop;
 
 import java.util.Arrays;
 import java.util.List;

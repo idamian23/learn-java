@@ -1,9 +1,9 @@
-package io.learnstuff.tutorial.main;
+package io.learnstuff.tutorial.getting_started_with_syntax;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Exercise2 {
+public class create_array_and_matrix {
     public static void main(String[] args){
 
         // Assignment 1 - Exercise 2

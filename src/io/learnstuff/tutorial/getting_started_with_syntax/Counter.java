@@ -1,4 +1,4 @@
-package io.learnstuff.tutorial.main;
+package io.learnstuff.tutorial.getting_started_with_syntax;
 
 public class Counter {
 

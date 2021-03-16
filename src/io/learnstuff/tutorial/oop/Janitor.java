@@ -1,4 +1,4 @@
-package io.learnstuff.tutorial.assignment2;
+package io.learnstuff.tutorial.oop;
 
 public class Janitor extends Person{
 

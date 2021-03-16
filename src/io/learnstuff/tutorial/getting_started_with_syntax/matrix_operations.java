@@ -1,9 +1,9 @@
-package io.learnstuff.tutorial.main;
+package io.learnstuff.tutorial.getting_started_with_syntax;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Exercise4 {
+public class matrix_operations {
     public static void main(String[] arg) {
         //For two given matrices implement:
         //matrix addition , matrix scalar multiplication

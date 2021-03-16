@@ -1,9 +1,9 @@
-package io.learnstuff.tutorial.main;
+package io.learnstuff.tutorial.getting_started_with_syntax;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Exercise5 {
+public class element_finder_in_array {
 
     //Generate a random array of numbers and searvh for a specific one.
     //If you find it then use a named break to exit the loop.

@@ -1,9 +1,9 @@
-package io.learnstuff.tutorial.main;
+package io.learnstuff.tutorial.getting_started_with_syntax;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Exercise3 {
+public class generate_matrix {
 
     //Assignment 1 - Exercise 3
     // Use the Random class to generate elements for a matrix for which you read

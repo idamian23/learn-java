@@ -1,7 +1,7 @@
-package io.learnstuff.tutorial.main;
+package io.learnstuff.tutorial.getting_started_with_syntax;
 
 
-public class Exercise1 {
+public class count_elements_in_array {
     public static void main(String[] args) {
 
 
@@ -16,8 +16,8 @@ public class Exercise1 {
         System.out.println(counter.count(arrInt, 2));
 
         //Array of Strings
-        String[] arrString = {"abc", "asfasd", null};
-        System.out.println(counter.count(arrString, "abc"));
+        String[] arrString = {"caine", "pisica", null};
+        System.out.println(counter.count(arrString, "caine"));
 
 
 
