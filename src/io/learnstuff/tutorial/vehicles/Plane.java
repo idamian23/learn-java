@@ -1,6 +1,6 @@
 package io.learnstuff.tutorial.vehicles;
 
-public class Plane extends Vehicle{
+public class Plane extends Vehicle {
 
 
 
@@ -33,5 +33,6 @@ public class Plane extends Vehicle{
     public void setWingSpan(double wingSpan) {
         this.wingSpan = wingSpan;
     }
+
 
 }

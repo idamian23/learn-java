@@ -3,7 +3,7 @@ package io.learnstuff.tutorial.vehicles;
 
 // Parent Class
 
-public class Vehicle {
+public class Vehicle implements VehicleInterface{
 
     private double weight;
     private double fuel;
@@ -22,16 +22,18 @@ public class Vehicle {
 
 
     //functions
-    public void start(){
-    if(this.engineState == "ON"){
-        System.out.println("System already on.");
-    }else {
-        this.setEngineState("ON");
-        System.out.println("Engine is ON.");
-    }
+    @Override
+    public void start() {
+        if(this.engineState == "ON"){
+            System.out.println("System already on.");
+        }else {
+            this.setEngineState("ON");
+            System.out.println("Engine is ON.");
+        }
     }
 
-    public void stop(){
+    @Override
+    public void stop() {
         if (this.engineState == "OFF"){
             System.out.println("Engine is already OFF");
         }else{this.setEngineState("OFF");
@@ -39,6 +41,7 @@ public class Vehicle {
         }
 
     }
+
 
 
 
@@ -84,4 +87,7 @@ public class Vehicle {
     public void setBrand(String brand) {
         this.brand = brand;
     }
+
+
+
 }

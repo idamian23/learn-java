@@ -1,6 +1,6 @@
 package io.learnstuff.tutorial.vehicles;
 
-public class Car extends  Vehicle{
+public class Car extends  Vehicle  {
 
 
     public Car(){  //Constructor
@@ -8,6 +8,7 @@ public class Car extends  Vehicle{
     }
     public Car(double weight, double fuel, int year, String brand) {
        super(weight,fuel,year,brand);
+
     }
 
 
@@ -20,5 +21,7 @@ public class Car extends  Vehicle{
 
         return str;
     }
+
+
 
 }
