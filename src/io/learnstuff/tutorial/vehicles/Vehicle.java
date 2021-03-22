@@ -53,7 +53,10 @@ public class Vehicle implements VehicleInterface{
     }
 
     public void setEngineState(String engineState) {
-        this.engineState = engineState;
+        if(engineState.equals("ON") && engineState.equals("OFF")){
+            this.engineState = engineState;
+        }
+
     }
 
     public double getWeight() {
@@ -61,7 +64,7 @@ public class Vehicle implements VehicleInterface{
     }
 
     public void setWeight(double weight) {
-        this.weight = weight;
+        if(weight > 0 ) this.weight = weight;
     }
 
     public double getFuel() {
@@ -69,7 +72,7 @@ public class Vehicle implements VehicleInterface{
     }
 
     public void setFuel(double fuel) {
-        this.fuel = fuel;
+        if(fuel > 0 ) this.fuel = fuel;
     }
 
     public int getYear() {
@@ -77,7 +80,7 @@ public class Vehicle implements VehicleInterface{
     }
 
     public void setYear(int year) {
-        this.year = year;
+        if (year > 1900 ) this.year = year;
     }
 
     public String getBrand() {
