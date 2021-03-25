@@ -2,8 +2,10 @@ package io.learnstuff.tutorial.vehicles;
 
 public class Vehicle {
 
-    private double maxSpeed; // km/h
-    private double maxTransportCapacity; // tons
+
+    private final static int wheels = 4;
+
+
     private int maxFuelCapacity; // litres
 
 
@@ -11,28 +13,18 @@ public class Vehicle {
 
 
     // getters and setters
-    public double getMaxSpeed() {
-        return maxSpeed;
-    }
 
-    public void setMaxSpeed(double maxSpeed) {
-        this.maxSpeed = maxSpeed;
-    }
 
-    public double getMaxTransportCapacity() {
-        return maxTransportCapacity;
-    }
-
-    public void setMaxTransportCapacity(double maxTransportCapacity) {
-        this.maxTransportCapacity = maxTransportCapacity;
-    }
-
-    public int getFuelCapacity() {
+    public int getMaxFuelCapacity() {
         return maxFuelCapacity;
     }
 
-    public void setFuelCapacity(int fuelCapacity) {
-        this.maxFuelCapacity = fuelCapacity;
+    public void setMaxFuelCapacity(int maxFuelCapacity) {
+        this.maxFuelCapacity = maxFuelCapacity;
+    }
+
+    public static int getWheels() {
+        return wheels;
     }
 
 

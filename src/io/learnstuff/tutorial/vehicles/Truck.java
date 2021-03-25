@@ -1,7 +1,6 @@
 package io.learnstuff.tutorial.vehicles;
 
 public class Truck extends Vehicle implements TruckInterface {
-    private final double maxSpeed = 90; // km/h
     private double maxTransportCapacity;  // tons
     private double trailStatus = 0;
 
@@ -12,6 +11,7 @@ public class Truck extends Vehicle implements TruckInterface {
 
     @Override
     public double load(double amount) {
+        System.out.println("Truck has loaded.");
         trailStatus += amount;
         if (trailStatus > maxTransportCapacity){
             throw new IllegalStateException("You overloaded. PLEASE unload!");
@@ -28,6 +28,21 @@ public class Truck extends Vehicle implements TruckInterface {
     public void showTrailStatus() {
         System.out.println("Your trail status is: " + trailStatus);
 
+    }
+
+    @Override
+    public void emptyTruck() {
+        trailStatus = 0;
+    }
+
+
+    public double getMaxTransportCapacity() {
+        return maxTransportCapacity;
+    }
+
+
+    public void setMaxTransportCapacity(double maxTransportCapacity) {
+        this.maxTransportCapacity = maxTransportCapacity;
     }
 
 

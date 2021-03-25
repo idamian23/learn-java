@@ -10,6 +10,7 @@ public class Car extends Vehicle implements CarInterface{
 
     @Override
     public double accelerate(double speedUp) {
+        System.out.println("Car accelerated!");
 
         speedStatus += speedUp;
 
@@ -28,12 +29,27 @@ public class Car extends Vehicle implements CarInterface{
 
     @Override
     public void brake() {
+        System.out.println("Car has braked.");
         speedStatus -= speedStatus;
     }
 
     @Override
     public void showSpeed() {
-        System.out.println(speedStatus);
+
         System.out.println("Your current speed is: " + speedStatus);
+    }
+
+
+    public double getMaxSpeed() {
+        return maxSpeed;
+    }
+
+
+    public void setMaxSpeed(double maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public double getSpeedStatus() {
+        return speedStatus;
     }
 }
