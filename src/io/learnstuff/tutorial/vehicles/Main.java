@@ -14,14 +14,16 @@ public class Main {
         System.out.println("Your truck max capacity of trail is: " + truck.getMaxTransportCapacity());
         truck.emptyTruck();
         truck.showTrailStatus();
+        truck.setMaxFuelCapacity(130);
+        truck.getMaxFuelCapacity();
 
         System.out.println("---------------CAR----------------");
-        car.setMaxSpeed(120);
         car.accelerate(120);
         car.decelerate(5);
         car.showSpeed();
         car.brake();
         car.showSpeed();
+        car.getMaxSpeed();
 
         System.out.println("---------------VAN----------------");
         van.setMaxSpeed(100);

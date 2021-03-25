@@ -1,11 +1,11 @@
 package io.learnstuff.tutorial.vehicles;
 
-public class Van extends Vehicle implements TruckInterface, CarInterface{
+public class Van extends Vehicle implements CarriageInterface, CarInterface{
 
     private double maxTransportCapacity;  // tons
     private double maxSpeed;
     private double trailStatus = 0;
-    private double speedStatus = 0;
+    private double currentSpeed = 0;
 
     public Van(double maxTransportCapacity, double maxSpeed){
         this.maxTransportCapacity = maxTransportCapacity;
@@ -41,29 +41,29 @@ public class Van extends Vehicle implements TruckInterface, CarInterface{
     public double accelerate(double speedUp) {
         System.out.println("Van accelerated!");
 
-        speedStatus += speedUp;
+        currentSpeed += speedUp;
 
-        if (speedStatus > maxSpeed) {
+        if (currentSpeed > maxSpeed) {
             throw new IllegalStateException("You are at the maximum speed. Slow down! Life has priority!");
-        } else return speedStatus;
+        } else return currentSpeed;
 
 
     }
 
     @Override
     public void decelerate(double speedDown) {
-        speedStatus -= speedDown;
+        currentSpeed -= speedDown;
 
     }
 
     @Override
     public void brake() {
-        speedStatus -= speedStatus;
+        currentSpeed -= currentSpeed;
     }
 
     @Override
     public void showSpeed() {
-        System.out.println("Your current speed is: " + speedStatus);
+        System.out.println("Your current speed is: " + currentSpeed);
     }
 
     public double getMaxTransportCapacity() {
@@ -71,7 +71,9 @@ public class Van extends Vehicle implements TruckInterface, CarInterface{
     }
 
     public void setMaxTransportCapacity(double maxTransportCapacity) {
+
         this.maxTransportCapacity = maxTransportCapacity;
+        System.out.println("Your max transport capacity is: " + maxTransportCapacity);
     }
 
     public double getMaxSpeed() {
@@ -86,7 +88,7 @@ public class Van extends Vehicle implements TruckInterface, CarInterface{
         return trailStatus;
     }
 
-    public double getSpeedStatus() {
-        return speedStatus;
+    public double getCurrentSpeed() {
+        return currentSpeed;
     }
 }

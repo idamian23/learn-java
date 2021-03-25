@@ -1,6 +1,6 @@
 package io.learnstuff.tutorial.vehicles;
 
-public class Truck extends Vehicle implements TruckInterface {
+public class Truck extends Vehicle implements CarriageInterface {
     private double maxTransportCapacity;  // tons
     private double trailStatus = 0;
 
@@ -41,9 +41,6 @@ public class Truck extends Vehicle implements TruckInterface {
     }
 
 
-    public void setMaxTransportCapacity(double maxTransportCapacity) {
-        this.maxTransportCapacity = maxTransportCapacity;
-    }
 
 
 }

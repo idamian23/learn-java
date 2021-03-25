@@ -1,6 +1,6 @@
 package io.learnstuff.tutorial.vehicles;
 
-public interface TruckInterface {
+public interface CarriageInterface {
 
 
 

@@ -4,8 +4,6 @@ public class Vehicle {
 
 
     private final static int wheels = 4;
-
-
     private int maxFuelCapacity; // litres
 
 
@@ -16,6 +14,7 @@ public class Vehicle {
 
 
     public int getMaxFuelCapacity() {
+        System.out.println("Your max fuel capacity is: " + maxFuelCapacity);
         return maxFuelCapacity;
     }
 
