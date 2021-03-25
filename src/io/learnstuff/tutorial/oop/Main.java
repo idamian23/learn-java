@@ -4,15 +4,15 @@ public class Main {
     public static void main(String[] arg) {
 
         Professor professor;  // reference-> no memory allocated
-        professor = new Professor(); // new operator -> allocate memory
+        professor = new Professor("Gigel"); // new operator -> allocate memory
 
         SecurityGuard securityGuard = new SecurityGuard();
 
         Student student = new Student();
 
-        Janitor janitor = new Janitor();
+        Janitor janitor = new Janitor("Victor");
 
-        professor.doStuff(2, 5);
+        professor.doStuff();
         securityGuard.doStuff();
         securityGuard.fights();
         student.doStuff();

@@ -2,18 +2,15 @@ package io.learnstuff.tutorial.oop;
 
 public class Professor extends Person {
 
-    private int number1;
-    private int number2;
 
-    public Professor(){
-        this.number1 = number1;
-        this.number2 = number2;
 
+    public Professor(String name){
+        this.setName(name);
     }
 
-    public void doStuff(int number1, int number2){
-        System.out.println("A proffesor adds numbers.");
-        System.out.println("number1 " +" + " + " number2" + " = " + number1 + number2);
-    }
 
+    @Override
+    public void doStuff() {
+        System.out.println("I am a profesor. My name is: " + getName());
+    }
 }
