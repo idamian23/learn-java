@@ -6,6 +6,7 @@ public class Main {
         var professor = new Professor("Gil Dobrică");
         var student = new Student("Damian Ionut");
         var janitor = new Janitor("John McCleaner");
+        var securityGuard = new SecurityGuard("Spartacus");
 
         System.out.println("-----------PROFESSOR-------------");
         professor.getName();
@@ -23,5 +24,10 @@ public class Main {
         janitor.introduceYourself();
         janitor.nameYourJob();
         janitor.janitorMethod(10, "odd");
+
+        System.out.println();
+        System.out.println("-----------SEC GUARD-------------");
+        securityGuard.securityGuardEncryptionMethod("password", 2);
+        securityGuard.securityGuardDecryptionMethod("rcuuyqtf", 2);
     }
 }
