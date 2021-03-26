@@ -1,7 +1,7 @@
 package io.learnstuff.tutorial.abstract_person;
 
 public abstract class Person {
-    public String name;
+    private String name;
 
     public Person(String name){
         this.name = name;

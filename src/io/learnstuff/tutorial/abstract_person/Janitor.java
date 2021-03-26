@@ -2,6 +2,8 @@ package io.learnstuff.tutorial.abstract_person;
 
 public class Janitor extends Person{
 
+    private  String name;
+
     public Janitor(String name) {
         super(name);
     }

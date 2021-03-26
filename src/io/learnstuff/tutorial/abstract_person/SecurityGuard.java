@@ -1,6 +1,9 @@
 package io.learnstuff.tutorial.abstract_person;
 
 public class SecurityGuard extends Person{
+
+    private  String name;
+
     public SecurityGuard(String name) {
         super(name);
     }

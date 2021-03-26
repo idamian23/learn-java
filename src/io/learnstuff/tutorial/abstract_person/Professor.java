@@ -1,7 +1,7 @@
 package io.learnstuff.tutorial.abstract_person;
 
 public class Professor extends Person {
-
+        private  String name;
     public Professor(String name) {
         super(name);
     }
