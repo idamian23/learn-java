@@ -10,8 +10,8 @@ public class TextProcessing implements TextProcessingInterface {
 
         String[] splits = string.split("\\s");//This regEx splits the String on the WhiteSpaces
 
-        for(String splits2: splits) {
-            System.out.println(splits2);
+        for(String split: splits) {
+            System.out.println(split);
         }
     }
 

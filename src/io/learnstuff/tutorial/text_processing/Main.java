@@ -4,6 +4,6 @@ public class Main {
     public static void main(String[] arg){
 
         var textProcessing = new TextProcessing();
-        textProcessing.split("Damian Ionut are talent.");
+        textProcessing.split("This is going to split the string.");
     }
 }
