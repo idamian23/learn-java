@@ -21,8 +21,8 @@ public class TextProcessing implements TextProcessingInterface {
     }
 
     @Override
-    public void indexOf(int indexOf, String replaceTxt) {
-
+    public void indexOf(int word, String textToBeReplaced) {
+       
     }
 
 }
