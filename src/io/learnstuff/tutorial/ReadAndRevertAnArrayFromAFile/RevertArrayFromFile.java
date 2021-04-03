@@ -27,8 +27,6 @@ public class RevertArrayFromFile {
                 System.out.print(values[i] + " ");
             }
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
