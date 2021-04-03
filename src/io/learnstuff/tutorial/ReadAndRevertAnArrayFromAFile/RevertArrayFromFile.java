@@ -1,6 +1,7 @@
 package io.learnstuff.tutorial.ReadAndRevertAnArrayFromAFile;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 public class RevertArrayFromFile {
     public static void main(String[] arg) throws FileNotFoundException, UnsupportedEncodingException {
@@ -8,21 +9,21 @@ public class RevertArrayFromFile {
         String line = "";
         String[] values = new String[10];
 
+        try (
+                BufferedReader bufferedReader = new BufferedReader(new FileReader(path));
+                PrintWriter writer = new PrintWriter("returnedValues.txt", StandardCharsets.UTF_8);
+        ) {
 
 
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader(path));
-            PrintWriter writer = new PrintWriter("returnedValues.txt", "UTF-8");
-
-            while((line = bufferedReader.readLine()) != null){
+            while ((line = bufferedReader.readLine()) != null) {
                 values = line.split(",");
             }
-            for(int i = values.length - 1 ;i >= 0; i--){
+            for (int i = values.length - 1; i >= 0; i--) {
                 writer.append(values[i] + " ");
             }
             writer.close();
             System.out.println("Values printed on document: ");
-            for(int i = values.length - 1 ;i >= 0; i--){
+            for (int i = values.length - 1; i >= 0; i--) {
                 System.out.print(values[i] + " ");
             }
 
@@ -31,8 +32,8 @@ public class RevertArrayFromFile {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
-
-
 }
+
+
+
