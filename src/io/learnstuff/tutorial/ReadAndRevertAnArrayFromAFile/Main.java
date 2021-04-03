@@ -32,11 +32,6 @@ public class Main {
             e.printStackTrace();
         }
 
-
-        // for(int i = 0; i < 10 ; i++)
-        // System.out.println(returnedValues[i]);
-
-
     }
 
 
