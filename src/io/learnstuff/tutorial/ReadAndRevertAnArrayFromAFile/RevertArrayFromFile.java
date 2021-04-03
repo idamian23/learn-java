@@ -7,12 +7,12 @@ public class RevertArrayFromFile {
         String path = "D:/FEAA SIA/SEM 1/JAVA/AssignmentsLearnStuffAcademy/src/io/learnstuff/tutorial/ReadAndRevertAnArrayFromAFile/file.txt";
         String line = "";
         String[] values = new String[10];
-        PrintWriter writer = new PrintWriter("returnedValues.txt", "UTF-8");
+
 
 
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(path));
-
+            PrintWriter writer = new PrintWriter("returnedValues.txt", "UTF-8");
 
             while((line = bufferedReader.readLine()) != null){
                 values = line.split(",");
