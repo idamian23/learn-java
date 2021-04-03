@@ -2,7 +2,7 @@ package io.learnstuff.tutorial.ReadAndRevertAnArrayFromAFile;
 
 import java.io.*;
 
-public class Main {
+public class RevertArrayFromFile {
     public static void main(String[] arg) throws FileNotFoundException, UnsupportedEncodingException {
         String path = "D:/FEAA SIA/SEM 1/JAVA/AssignmentsLearnStuffAcademy/src/io/learnstuff/tutorial/ReadAndRevertAnArrayFromAFile/file.txt";
         String line = "";
