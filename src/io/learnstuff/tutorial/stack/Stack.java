@@ -3,8 +3,14 @@ package io.learnstuff.tutorial.stack;
 import java.util.Arrays;
 
 public class Stack {
-    private int[] items = new int[5];
+
     private int count;
+    private int capacity;
+    private int[] items = new int[capacity];
+
+    public Stack(int numerOfElements){
+        this.capacity  = capacity;
+    }
 
     public void push(int item){ //add
         if(count == items.length)
