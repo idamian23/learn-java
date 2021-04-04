@@ -5,11 +5,10 @@ import java.util.Arrays;
 public class Stack {
 
     private int count;
-    private int capacity;
-    private int[] items = new int[capacity];
+    private int[] items;
 
-    public Stack(int numerOfElements){
-        this.capacity  = capacity;
+    public Stack(int capacity){
+        items  = new int[capacity];
     }
 
     public void push(int item){ //add
