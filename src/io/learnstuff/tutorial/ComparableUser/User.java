@@ -2,10 +2,15 @@ package io.learnstuff.tutorial.ComparableUser;
 
 public class User implements Comparable<User>{
     private String name;
+    private String email;
 
-    public User(String name) {
+    public User(String name, String email) {
         this.name = name;
+        this.email = email;
     }
+
+
+
 
     @Override
     public String toString() {
@@ -15,5 +20,13 @@ public class User implements Comparable<User>{
     @Override
     public int compareTo(User other) {
         return name.compareTo(other.name);
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
