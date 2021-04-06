@@ -1,4 +1,4 @@
-package Palindrome;
+package io.learnstuff.tutorial.Palindrome;
 
 public class Palindrome {
     public static void main(String[] arg){
