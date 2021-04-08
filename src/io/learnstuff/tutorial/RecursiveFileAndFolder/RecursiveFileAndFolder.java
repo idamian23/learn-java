@@ -7,7 +7,7 @@ import java.io.FilenameFilter;
 
         public class RecursiveFileAndFolder {
             static  File dir = new File("D:/FEAA SIA/SEM 1/JAVA/FolderForSearching");
-            static String[] extensions = new String[]{"png", "pdf"};
+            static String[] extensions = new String[]{"png" , "pdf"};
             static FilenameFilter extension_filter = (dir, name) -> {
                  for (String extension : extensions) {
                      if (name.endsWith("." + extension)) {
@@ -23,7 +23,7 @@ import java.io.FilenameFilter;
         }
 
 
-        void listFolder(File dir){
+        public void listFolder(File dir){
             File[] subDirs = dir.listFiles(new FileFilter() {
                 @Override
                 public boolean accept(File pathname) {
