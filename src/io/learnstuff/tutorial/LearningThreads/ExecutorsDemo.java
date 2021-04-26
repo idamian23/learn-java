@@ -1,17 +1,22 @@
 package io.learnstuff.tutorial.LearningThreads;
 
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 
 public class ExecutorsDemo {
     public static void show(){
        var executor = Executors.newFixedThreadPool(2);
        try {
-           System.out.println(executor.getClass().getName());
-           executor.submit(() -> {
-               System.out.println(Thread.currentThread().getName());
+           var future = executor.submit(() -> {
+               LongTask.simulate();
+               return 1;
            });
-       }
-       finally {
+           System.out.println("Do more work");
+           var result = future.get();
+           System.out.println(result);
+       } catch (InterruptedException | ExecutionException e) {
+           e.printStackTrace();
+       } finally {
            executor.shutdown();
        }
 
