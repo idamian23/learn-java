@@ -6,6 +6,7 @@ public class Main {
         System.out.println(Runtime.getRuntime().availableProcessors());
         ThreadDemo.show();
         ExecutorsDemo.show();
+        CompletableFuturesDemo.show();
 
     }
 }
