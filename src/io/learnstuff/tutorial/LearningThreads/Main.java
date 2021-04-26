@@ -5,5 +5,7 @@ public class Main {
         System.out.println(Thread.activeCount() );
         System.out.println(Runtime.getRuntime().availableProcessors());
         ThreadDemo.show();
+        ExecutorsDemo.show();
+
     }
 }
