@@ -2,8 +2,6 @@ package io.learnstuff.tutorial.getting_started_with_syntax;
 
 public class Counter {
 
-    // todo : count cu generics
-
     // Solution exercise 1
     public int count(int[] arr, int toFind) {
         int counter = 0;
